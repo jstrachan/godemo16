@@ -4,7 +4,7 @@ pipeline {
     ORG = 'jstrachan'
     APP_NAME = 'godemo16'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
-    DOCKER_REGISTRY = 'docker.io'
+    DOCKER_REGISTRY = '10.59.250.29:5000'
   }
   stages {
     stage('CI Build and push snapshot') {
